@@ -19,9 +19,7 @@ const ListItem = (props) => {
       className="bg-white/30 w-full"
     >
       {list.map(e => (
-        <SwiperSlide className="py-2" key={e.id}>
-          <GlassesItem item={e} setGlasses={setGlasses} idSelected={idSelected} setIdSeleted={setIdSeleted} />
-        </SwiperSlide>
+        <GlassesItem item={e} setGlasses={setGlasses} idSelected={idSelected} setIdSeleted={setIdSeleted} key={e.id} />
       ))}
     </Swiper>
   )
